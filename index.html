@@ -5,53 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão verde</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .flogo, .footer {
+            width: 100%; /* Define a largura das imagens de rodapé e do logotipo como 50% da largura da tela */
+            max-width: 200px; /* Limita o tamanho máximo das imagens para evitar distorções */
+            margin-bottom: 20px; /* Adiciona um espaçamento na parte inferior das imagens */
+        }
+
+        .card {
+            margin: 0 auto;
+            width: 70%; /* Define a largura do cartão como 80% da largura da tela */
+            max-width: 300px; /* Limita o tamanho máximo do cartão */
+            background-color: rgb(152, 151, 151);
+            padding: 20px; /* Aumenta o preenchimento interno do cartão */
+            border-radius: 10px; /* Reduz o raio da borda do cartão */
+            border: solid 1px black;
+            text-align: center; /* Centraliza o conteúdo */
+        }
+
+        .eu {
+            width: 50%; /* Define a largura da imagem "eu" como 50% da largura do cartão */
+            max-width: 150px; /* Limita o tamanho máximo da imagem "eu" */
+            border-radius: 50%;
+        }
+
+        p {
+            color: aliceblue;
+        }
+
+        .logo {
+            width: 50%; /* Define a largura da imagem do logotipo como 50% da largura do cartão */
+            max-width: 150px; /* Limita o tamanho máximo da imagem do logotipo */
+            float: right;
+            margin-top: 20px; /* Adiciona um espaçamento na parte superior da imagem do logotipo */
+        }
+
+        hr {
+            margin: 20px 0; /* Adiciona um espaçamento acima e abaixo da linha horizontal */
+            border: none;
+            border-top: 1px solid #ccc; /* Adiciona uma linha horizontal com cor cinza */
+        }
+
+        /* Media query para dispositivos com largura máxima de 600px (como smartphones) */
+        @media (max-width: 600px) {
+            .card {
+                width: 90%; /* Reduz a largura do cartão para 90% da largura da tela */
+            }
+            .flogo, .footer, .eu, .logo {
+                width: 100%; /* Ajusta o tamanho das imagens para 70% da largura da tela */
+            }
+        }
+    </style>
 </head>
-<style>
-    body{
-        font-family: "Montserrat", sans-serif;
-    }
-
-    .card{
-        margin: 0 auto;
-        height: 25%;
-        width: 25%;
-        background-color: rgb(152, 151, 151);
-        padding: 1%;
-        border-radius: 3%;
-        border: solid 1px black;
-    }
-
-    .eu{
-        height: 35%;
-        width: 35%;
-        border-radius: 50%;
-    }
-
-    p{
-        color: aliceblue;
-    }
-
-    .logo{
-        height: 35%;
-        width: 35%;
-        float: right;
-    }
-
-</style>
 <body>
     <br>
-   <center> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdC3IOhrD3oPXIJARIuwPfbgdaqVeasKAQc-JOMExTdQ&s" alt=""> </center>
-   <center><h1>Carteira Digital</h1></center>
+    <center><img class="flogo" src="https://1.bp.blogspot.com/-iF9W2j3HSJI/TtkQI1eq07I/AAAAAAAAFyw/vSR-3Ah_NEU/s400/Logo%2BFATECSJC.jpg" alt=""></center>
+    <center><h1>Carteira Digital</h1></center>
     <div class="card">
         <img class="logo" src="https://seeklogo.com/images/F/Fatec-logo-9710C99301-seeklogo.com.png" alt="">
         <img class="eu" src="https://media.licdn.com/dms/image/C4E03AQHLvR-x8YHVLQ/profile-displayphoto-shrink_800_800/0/1627484319088?e=2147483647&v=beta&t=w_mtlhD3MBYm7TxCi1ETZVykbF_DVTEOLatca3W4nzw" alt="">
+        <hr>
         <p>Nome Aluno: <strong>Bruno Pisciotta</strong></p>
         <p>Curso: <strong>Desenvolvimento de Software</strong></p>
         <p>RA: <strong>48210504800</strong></p>
     </div>
-    <center> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1fzAhgpsi_wDMzN7hWHYp8SqvPXuzSf18VWP84aO&s" alt=""> </center>
+    <center><img class="footer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1fzAhgpsi_wDMzN7hWHYp8SqvPXuzSf18VWP84aO&s" alt=""></center>
 </body>
 </html>
