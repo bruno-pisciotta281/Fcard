@@ -24,6 +24,10 @@
             
         }
 
+        .logo01{
+            height: 25%;
+        }
+
         .cardTitle {
         display: flex; 
         justify-content: space-between; 
@@ -112,19 +116,55 @@
         }
 
         @media only screen and (max-width: 600px) { /* Media query para telas menores */
+            .title img{
+                height: 30%;
+            }
+
+            .title h1{
+                font-size: 23px;
+                
+            }
+            
             .card {
                 height: 90%;
                 width: 80%; /* Reduz a largura para ocupar mais espaço em telas menores */
             }
 
-            .foto img {
-                max-width: 30%; /* Ajusta a largura máxima da imagem para ocupar toda a largura do contêiner */
+            .informations {
+                height: 20%;
+                display: block;
+                background-color: darkgray;
+                margin: 0 auto;
+
             }
 
-            .footer img{
-                height: 10% !important;
+            .foto img{
+                text-align: center;
+                width: 50%;
+                height: 40%;
+
             }
+
+            .cardTitle img{
+                max-width: 60% !important;
+                max-height: 30%;
+            }
+
+            .cardTitle p{
+                margin-left: 0%;
+                font-size: 10px !important;
+                text-align: center;
+            }
+
+            .informations{
+            display: block;
+            background-color: darkgray;
         }
+
+        footer img{
+                width: 90% !important;
+            }
+    }
 
     </style>
 </head>
@@ -145,7 +185,7 @@
 
     <div class="informations">
         <div class="foto">
-            <img src="assets/3x4.jpeg" alt="">
+            <center><img src="assets/3x4.jpeg" alt=""></center>
         </div>
         <div class="dados">
             <div class="dados2">
@@ -180,7 +220,10 @@
 
     <br>
 
-   <center> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1fzAhgpsi_wDMzN7hWHYp8SqvPXuzSf18VWP84aO&s" alt=""> </center>
+
+    <footer>
+        <center> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1fzAhgpsi_wDMzN7hWHYp8SqvPXuzSf18VWP84aO&s" alt=""></center>
+    </footer>
 
 </body>
 </html>
